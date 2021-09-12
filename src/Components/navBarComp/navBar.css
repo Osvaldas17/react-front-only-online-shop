@@ -1,0 +1,242 @@
+/* NAV BAR */
+
+.navBarWrapper {
+  display: flex;
+  background-color: rgb(228, 0, 70);
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 51;
+}
+
+.navContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.subSearchContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  font-size: 14px;
+  height: 37px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px 0 32px;
+  background-color: #f7f7f7;
+}
+
+.searchBtn {
+  font-size: 14px;
+  color: white;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  background-color: #3f3f3f;
+}
+
+.searchBtn span {
+  margin: 0 17px;
+}
+
+.logoContainer {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchDropDown {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.searchDropDownItem {
+  padding: 10px 10px 10px 32px;
+  background-color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.15s;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.searchDropDownItem:hover {
+  background-color: #f7f7f7;
+}
+
+.searchDropDownWrapper {
+  width: 37%;
+  position: absolute;
+  top: 12px;
+}
+
+.userContainer {
+  width: 21%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.cartInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  border-left: 1px solid #d30140;
+  width: 120px;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 65px;
+  border-right: 1px solid #d30140;
+  border-left: 1px solid #d30140;
+  width: 120px;
+}
+
+.userInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.user:hover {
+  background-color: #333333;
+}
+
+.userIcon {
+  margin-left: 10px;
+  display: flex;
+  font-size: 25px;
+}
+
+.cartIcon {
+  margin-left: 10px;
+  display: flex;
+  font-size: 25px;
+}
+
+.userText {
+  font-size: 13px;
+}
+
+.dropDownUser {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 65px;
+  width: 200px;
+  color: white;
+  background-color: #333333;
+  border-radius: 4px 0 4px 4px;
+}
+
+.newUserRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.bottomPartUserDropDown {
+  border-top: solid 1px #4d4d4d;
+  padding: 10px;
+}
+
+.newUserQuestion {
+  font-size: 11px;
+  color: gray;
+}
+
+.registerBtn {
+  cursor: pointer;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.dropDownSection {
+  padding: 5px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart-sm-screen {
+  display: none;
+}
+
+.dropDownSection:hover {
+  background-color: #4d4d4d;
+}
+
+.user:hover .dropDownUser {
+  display: flex;
+}
+
+.homeBtnSmScreen {
+  align-items: center;
+  font-size: 25px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 640px) {
+  .logoContainer {
+    display: none;
+  }
+  .searchBtn {
+    display: none;
+  }
+  .searchDropDownWrapper {
+    width: 50%;
+  }
+  .cartInner {
+    display: none;
+  }
+  .cart-sm-screen {
+    display: flex;
+  }
+  .homeBtnSmScreen {
+    display: flex;
+  }
+  .userTextSm {
+    display: none;
+  }
+}

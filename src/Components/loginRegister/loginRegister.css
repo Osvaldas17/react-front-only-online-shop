@@ -1,0 +1,51 @@
+.windowContainer {
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  border: solid 1px #d2d2d2;
+  border-radius: 4px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+}
+
+.button:hover {
+  background-color: #c0003a;
+}
+
+.windowContainer > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.errorMessage {
+  color: #c0003a;
+  background-color: #f7f7f7;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border: solid 1px #d2d2d2;
+}
+
+.signIn {
+  cursor: pointer;
+  color: #d30140;
+}
+
+.exit {
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+}
