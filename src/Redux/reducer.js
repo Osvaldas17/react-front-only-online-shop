@@ -62,9 +62,9 @@ export const handleUser = (
   state = {
     users: [],
     currentUser: {
-      username: "tunas",
+      username: "",
       password: "",
-      userId: 5,
+      userId: null,
       cart: [],
       saved: [],
     },
